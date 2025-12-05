@@ -2,6 +2,8 @@
 
 A comprehensive example application demonstrating Agentic AI concepts using LangChain, React, FastAPI, and SQLite. This project teaches how to build an intelligent SQL agent that can answer natural language questions about a sales database.
 
+Full blog post here -> https://open.substack.com/pub/dataengineeringcentral/p/building-agentic-ai-fancy
+
 ## Features
 
 - 🤖 **LangChain SQL Agent**: Uses LangChain to create an intelligent agent that translates natural language to SQL queries
