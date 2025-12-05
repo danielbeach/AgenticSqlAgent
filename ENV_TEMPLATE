@@ -1,0 +1,21 @@
+# SQL Agent Environment Variables Template
+# Copy this file to .env and fill in your values
+
+# Required: OpenAI API Key
+OPENAI_API_KEY=your-api-key-here
+
+# Optional: Custom OpenAI endpoint (for OpenAI-compatible APIs)
+OPENAI_BASE_URL=https://api.openai.com/v1
+
+# Optional: Model to use (default: gpt-4o-mini)
+OPENAI_MODEL=gpt-4o-mini
+
+# Optional: Temperature (default: 0.0)
+OPENAI_TEMPERATURE=0.0
+
+# Optional: Database URL (default: sqlite:///./data/sales.db)
+DATABASE_URL=sqlite:///./data/sales.db
+
+# Optional: LLM Provider (default: openai)
+LLM_PROVIDER=openai
+

@@ -1,0 +1,18 @@
+[project]
+name = "sqlagent"
+version = "0.1.0"
+description = "SQL Agent example for teaching Agentic AI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.5",
+    "langchain-community>=0.0.20",
+    "langchain-experimental>=0.0.50",
+    "fastapi>=0.104.1",
+    "uvicorn[standard]>=0.24.0",
+    "sqlalchemy>=2.0.23",
+    "pydantic>=2.5.0",
+    "pydantic-settings>=2.1.0",
+    "python-multipart>=0.0.6",
+]

@@ -1,0 +1,297 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  margin-top: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.config-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s;
+}
+
+.config-button:hover {
+  background: #5568d3;
+}
+
+.config-panel {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #e0e0e0;
+}
+
+.config-panel h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.config-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.config-item label {
+  font-weight: 600;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.config-item code {
+  background: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  border: 1px solid #ddd;
+}
+
+.config-note {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.query-form {
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.input-group textarea {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.input-group textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.input-group button {
+  padding: 15px 30px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  white-space: nowrap;
+}
+
+.input-group button:hover:not(:disabled) {
+  background: #5568d3;
+}
+
+.input-group button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.examples {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+.examples h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.example-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.example-button {
+  padding: 8px 16px;
+  background: white;
+  border: 2px solid #667eea;
+  color: #667eea;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.example-button:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+}
+
+.example-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 30px;
+}
+
+.results h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+}
+
+.result-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #667eea;
+}
+
+.result-card.error {
+  border-left-color: #e74c3c;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.timestamp {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.status.success {
+  color: #27ae60;
+}
+
+.status.error {
+  color: #e74c3c;
+}
+
+.result-query {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.result-query strong {
+  color: #667eea;
+}
+
+.result-content,
+.result-error {
+  margin-top: 10px;
+}
+
+.result-content strong,
+.result-error strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.result-content pre,
+.result-error pre {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  border: 1px solid #e0e0e0;
+}
+
+.result-error pre {
+  color: #e74c3c;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .input-group button {
+    width: 100%;
+  }
+
+  .config-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
